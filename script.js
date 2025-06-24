@@ -1,12 +1,16 @@
-const { createElement } = require("react");
-
 function addTask() {
   const taskInput = document.getElementById('taskInput');
   const taskText = taskInput.value.trim();
+
   if(taskText !== '') {
     const li = document.createElement('li');
     li.textContent = taskText;
-    document.getElementById('taskInput').appendChild(li);
+    document.getElementById('taskList').appendChild(li)
     taskInput.value = '';
   }
+}
+
+function deleteTask() {
+  const taskList = document.getElementById('taskList');
+  taskList.innerHTML = '';
 }

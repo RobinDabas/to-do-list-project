@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My To-do List</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input type="text" id="taskInput" placeholder="Write task here.">
+  <h1>My To-do List</h1>
+  <input type="text" id="taskInput" placeholder="Add task here.">
   <button onclick="addTask()">Add Task</button>
   <ul id="taskList"></ul>
+  <button id="delete" onclick="deleteTask()">Delete Task</button>
+
   <script src="script.js"></script>
 </body>
 </html>
